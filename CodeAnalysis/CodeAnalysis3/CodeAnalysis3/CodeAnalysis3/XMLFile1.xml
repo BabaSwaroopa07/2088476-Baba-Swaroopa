@@ -1,0 +1,5 @@
+﻿<RuleSet Name="New Rule Set" Description=" "ToolsVersion="16.0">
+	<Rules AnalyzerId="Roslynator.Csharp.Analyzers" RuleNamespace ="Roslynator.Csharp.Analyzers">
+		<Rule Id="RCS1075" Action ="Error"/>
+	</Rules>
+</RuleSet>

@@ -1,0 +1,4 @@
+﻿[*.cs]
+
+# RCS1065: Avoid usage of while statement to create an infinite loop.
+dotnet_diagnostic.RCS1065.severity = error
