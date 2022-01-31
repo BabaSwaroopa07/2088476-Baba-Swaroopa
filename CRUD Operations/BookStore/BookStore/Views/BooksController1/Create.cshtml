@@ -1,0 +1,29 @@
+﻿@model BookStore.Models.Books
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+@using (Html.BeginForm())
+{
+    @Html.LabelFor(Model => Model.Title)
+    <br />
+    @Html.EditorFor(Model => Model.Title)
+    <br/>
+    @Html.ValidationMessageFor(Model => Model.Title)
+    <br />
+
+
+    @Html.LabelFor(Model => Model.Price)
+    <br />
+    @Html.EditorFor(Model => Model.Price)
+    <br/>
+    @Html.ValidationMessageFor(Model => Model.Price)
+    <br />
+
+    <input type="submit" value="Create"/>
+
+
+}
+
