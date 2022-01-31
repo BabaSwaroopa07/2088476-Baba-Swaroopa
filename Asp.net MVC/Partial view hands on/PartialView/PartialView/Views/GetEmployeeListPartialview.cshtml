@@ -1,0 +1,23 @@
+﻿
+@model EmployeeDetails.Models.Employee
+
+@{
+
+ ViewData["Title"] = "GetEmpById";
+
+ Layout = "~/Views/Shared/_Layout.cshtml";
+} <h1>Employee Details </h1>
+
+<hr />
+
+<partial name="~/Views/Shared/GetEmployeeList.cshtml" />
+
+<hr /> <div>
+
+ <span>
+
+ <a asp-controller="Employee" asp-action="GetEmployeeList">Back To List</a>
+
+ </span>
+
+</div>
