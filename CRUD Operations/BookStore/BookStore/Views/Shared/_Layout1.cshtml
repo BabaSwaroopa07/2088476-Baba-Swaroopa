@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/css/site.css" rel="stylesheet" />
+
+</head>
+<body>
+    <h1>Books Store App</h1>
+    <div class="menu">9
+        @Html.ActionLink("List of books","Index")
+        <a href="#">List of Books</a>
+        <a href="#">Add Book</a>
+    </div>
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>

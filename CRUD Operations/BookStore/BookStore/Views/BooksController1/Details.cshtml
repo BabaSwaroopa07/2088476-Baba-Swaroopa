@@ -1,0 +1,17 @@
+﻿@model BookStore.Models.Books
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h3>Details</h3>
+<dl>
+    <dt>@Html.DisplayNameFor(Model => Model.Id)</dt>
+    <dd>@Html.DisplayFor(Model => Model.Id)</dd>
+
+    <dt>@Html.DisplayNameFor(Model => Model.Title)</dt>
+    <dd>@Html.DisplayFor(Model => Model.Title)</dd>
+
+    <dt>@Html.DisplayNameFor(Model => Model.Price)</dt>
+    <dd>@Html.DisplayFor(Model => Model.Price)</dd>
+</dl>
+

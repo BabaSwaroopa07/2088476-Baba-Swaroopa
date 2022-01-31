@@ -1,0 +1,32 @@
+﻿@model BookStore.Models.Books
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h3>Edit the book details</h3>
+@using (Html.BeginForm())
+{
+    @Html.HiddenFor(Model=>Model.Id)
+   
+    
+    @Html.LabelFor(Model => Model.Title)
+    <br />
+    @Html.EditorFor(Model => Model.Title)
+    <br />
+    @Html.ValidationMessageFor(Model => Model.Title)
+    <br />
+
+
+    @Html.LabelFor(Model => Model.Price)
+    <br />
+    @Html.EditorFor(Model => Model.Price)
+    <br />
+    @Html.ValidationMessageFor(Model => Model.Price)
+    <br />
+
+
+    <input type="submit" value="Create"/>
+
+
+}
+

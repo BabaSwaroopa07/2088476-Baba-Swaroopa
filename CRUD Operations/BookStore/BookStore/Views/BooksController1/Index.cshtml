@@ -1,0 +1,30 @@
+﻿@model List<BookStore.Models.Books>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>List of Books</h1>
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Title</th>
+        <th>Price</th>
+        <th>Actions</th>
+    </tr>
+    @foreach(var books in Model)
+            {
+                <tr>
+                    <td>@books.Id</td>
+                    <td>@books.Title</td>
+                    <td>@books.Price</td>
+                    <td>
+                        @Html.ActionLink("Details of the book", "Details", "Books", new { id = books.Id })
+                        @Html.ActionLink("Edit the details", "Edit", "Books", new { id = books.Id })
+                        @Html.ActionLink("Delete", "Delete", "Books", new { id = books.Id })
+
+                    </td>
+
+                </tr>
+            }
+</table>
+
